@@ -54,4 +54,6 @@ void save(text txt,  char *f);
  */
 void load(text txt, char *filename);
 
+void showupfirst(text txt);
+
 #endif

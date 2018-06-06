@@ -21,7 +21,7 @@ HEADERS +=     tst_test1.h \
     fibonachi_test.h \
     ../app/common.h \
     ../app/text/text.h \
-    ..app/text/_text.h \
+    ..app/text/_text.h
 
 
 SOURCES +=     main.cpp \
@@ -33,6 +33,7 @@ SOURCES +=     main.cpp \
     ../app/load.c \
     ../app/text/create_text.c \
     ../app/text/remove_all.c \
-    ../app/text/append_line.c
+    ../app/text/append_line.c\
+    ../app/showupfirst.c
 
 INCLUDEPATH += ../app

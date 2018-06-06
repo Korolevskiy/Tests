@@ -56,14 +56,16 @@ SOURCES       = ../../gtest-master/app/main.c \
 		../../gtest-master/app/process_backward.c \
 		../../gtest-master/app/text/cursors.c \
 		../../gtest-master/app/text/tracer.c \
-		../../gtest-master/app/text/create_text.c 
+		../../gtest-master/app/text/create_text.c \
+		../../gtest-master/app/showupfirst.c 
 OBJECTS       = main.o \
 		myfunc.o \
 		showrev.o \
 		process_backward.o \
 		cursors.o \
 		tracer.o \
-		create_text.o
+		create_text.o \
+		showupfirst.o
 DIST          = /opt/cs-qt/Qt/5.10.0/gcc_64/mkspecs/features/spec_pre.prf \
 		/opt/cs-qt/Qt/5.10.0/gcc_64/mkspecs/common/unix.conf \
 		/opt/cs-qt/Qt/5.10.0/gcc_64/mkspecs/common/linux.conf \
@@ -249,7 +251,8 @@ DIST          = /opt/cs-qt/Qt/5.10.0/gcc_64/mkspecs/features/spec_pre.prf \
 		../../gtest-master/app/process_backward.c \
 		../../gtest-master/app/text/cursors.c \
 		../../gtest-master/app/text/tracer.c \
-		../../gtest-master/app/text/create_text.c
+		../../gtest-master/app/text/create_text.c \
+		../../gtest-master/app/showupfirst.c
 QMAKE_TARGET  = app
 DESTDIR       = 
 TARGET        = app
@@ -685,6 +688,10 @@ tracer.o: ../../gtest-master/app/text/tracer.c ../../gtest-master/app/_text.h \
 create_text.o: ../../gtest-master/app/text/create_text.c ../../gtest-master/app/_text.h \
 		../../gtest-master/app/text.h
 	$(CC) -c $(CFLAGS) $(INCPATH) -o create_text.o ../../gtest-master/app/text/create_text.c
+
+showupfirst.o: ../../gtest-master/app/showupfirst.c ../../gtest-master/app/common.h \
+		../../gtest-master/app/text/text.h
+	$(CC) -c $(CFLAGS) $(INCPATH) -o showupfirst.o ../../gtest-master/app/showupfirst.c
 
 ####### Install
 

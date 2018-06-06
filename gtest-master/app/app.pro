@@ -9,7 +9,8 @@ SOURCES += main.c \
     process_backward.c \
     text/cursors.c \
     text/tracer.c \
-    text/create_text.c
+    text/create_text.c \
+    showupfirst.c
 
 HEADERS += \
     common.h \

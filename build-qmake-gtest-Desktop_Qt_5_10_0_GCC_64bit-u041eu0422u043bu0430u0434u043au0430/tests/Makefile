@@ -61,7 +61,8 @@ SOURCES       = ../../gtest-master/external/googletest/googletest/src/gtest-all.
 		../../gtest-master/app/load.c \
 		../../gtest-master/app/text/create_text.c \
 		../../gtest-master/app/text/remove_all.c \
-		../../gtest-master/app/text/append_line.c 
+		../../gtest-master/app/text/append_line.c \
+		../../gtest-master/app/showupfirst.c 
 OBJECTS       = gtest-all.o \
 		gmock-all.o \
 		main.o \
@@ -73,7 +74,8 @@ OBJECTS       = gtest-all.o \
 		load.o \
 		create_text.o \
 		remove_all.o \
-		append_line.o
+		append_line.o \
+		showupfirst.o
 DIST          = /opt/cs-qt/Qt/5.10.0/gcc_64/mkspecs/features/spec_pre.prf \
 		/opt/cs-qt/Qt/5.10.0/gcc_64/mkspecs/common/unix.conf \
 		/opt/cs-qt/Qt/5.10.0/gcc_64/mkspecs/common/linux.conf \
@@ -269,7 +271,8 @@ DIST          = /opt/cs-qt/Qt/5.10.0/gcc_64/mkspecs/features/spec_pre.prf \
 		../../gtest-master/app/load.c \
 		../../gtest-master/app/text/create_text.c \
 		../../gtest-master/app/text/remove_all.c \
-		../../gtest-master/app/text/append_line.c
+		../../gtest-master/app/text/append_line.c \
+		../../gtest-master/app/showupfirst.c
 QMAKE_TARGET  = tests
 DESTDIR       = 
 TARGET        = tests
@@ -834,6 +837,10 @@ remove_all.o: ../../gtest-master/app/text/remove_all.c ../../gtest-master/app/_t
 append_line.o: ../../gtest-master/app/text/append_line.c ../../gtest-master/app/_text.h \
 		../../gtest-master/app/text.h
 	$(CC) -c $(CFLAGS) $(INCPATH) -o append_line.o ../../gtest-master/app/text/append_line.c
+
+showupfirst.o: ../../gtest-master/app/showupfirst.c ../../gtest-master/app/common.h \
+		../../gtest-master/app/text/text.h
+	$(CC) -c $(CFLAGS) $(INCPATH) -o showupfirst.o ../../gtest-master/app/showupfirst.c
 
 ####### Install
 
