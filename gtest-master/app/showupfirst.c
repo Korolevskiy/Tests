@@ -10,7 +10,7 @@ void showupfirst(text txt)
     process_backward(txt, show_upfirst);
 }
 
-static void show_upfirst(int index, char *contents){
+void show_upfirst(int index, char *contents){
     assert(contents != NULL);
     UNUSED(index);
     int i, len;
