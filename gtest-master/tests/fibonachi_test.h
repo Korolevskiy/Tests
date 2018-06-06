@@ -230,7 +230,7 @@ TEST(group3, test2){
     
     show_upfirst(0, tch);
     
-    char qwe[5] = "super";
+    char qwe[5] = 'c';
     show_upfirst(0, qwe);
     SUCCEED();
 }
