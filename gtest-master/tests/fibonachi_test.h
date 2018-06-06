@@ -230,7 +230,7 @@ TEST(group3, test2){
 }
 
 
-TEST(group3, test2){
+TEST(group3, test3){
     myfunc(1);
     fibonachi(-1);
     fibonachi(1);
@@ -239,7 +239,7 @@ TEST(group3, test2){
 }
 
 
-TEST(group3, test2){
+TEST(group3, test4){
     SUCCEED();
 }
 
