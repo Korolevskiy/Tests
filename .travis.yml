@@ -1,0 +1,18 @@
+language:
+  - cpp
+
+before_install:
+  - pip install --user cpp-coveralls
+  - sudo apt-get install qtdeclarative5-dev qt5-default
+
+
+
+script:
+  - qmake -qt=qt5
+  - ./tests/tests
+
+after_success:
+  - coveralls --root . -E ".*googletest.*" -E ".*moc_.*"
+
+notifications:
+email: false
