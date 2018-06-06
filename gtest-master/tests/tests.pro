@@ -16,7 +16,7 @@ LIBS += -lgcov
 
 DEFINES +=INPUTDIR=\\\"$$PWD\\\"
 
-HEADERS +=     tst_test1.h \
+HEADERS +=     \
     ../app/myfunc.h \
     fibonachi_test.h \
     ../app/common.h \
