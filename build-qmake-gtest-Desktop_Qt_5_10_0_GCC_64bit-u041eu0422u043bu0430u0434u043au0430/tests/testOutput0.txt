@@ -1,1 +1,0 @@
-The file /home/01/korolevs/inf/Tests/gtest-master/tests/text1.txt cannot be opened
