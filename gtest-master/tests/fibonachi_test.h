@@ -213,7 +213,13 @@ TEST(group2, test4){
 
     compare((char *)"outputnoupfirst.txt",(char *) "testOutput3.txt");
 }
+
 TEST(group3, test1){
+    text txt = create_text();
+    const char* tch;
+    char th = 'c';
+    tch = &th;
+    append_line(txt, tch);
     SUCCEED();
 }
 
