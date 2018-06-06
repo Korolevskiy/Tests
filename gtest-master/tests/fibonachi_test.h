@@ -224,6 +224,22 @@ TEST(group3, test1){
 }
 
 TEST(group3, test2){
+    text txt = create_text();
+    showrev(txt);
+    SUCCEED();
+}
+
+
+TEST(group3, test2){
+    myfunc(1);
+    fibonachi(-1);
+    fibonachi(1);
+    fibonachi(3);
+    SUCCEED();
+}
+
+
+TEST(group3, test2){
     SUCCEED();
 }
 
