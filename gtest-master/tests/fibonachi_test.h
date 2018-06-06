@@ -223,4 +223,8 @@ TEST(group3, test1){
     SUCCEED();
 }
 
+TEST(group3, test2){
+    SUCCEED();
+}
+
 #endif // FIBONACHI_H
