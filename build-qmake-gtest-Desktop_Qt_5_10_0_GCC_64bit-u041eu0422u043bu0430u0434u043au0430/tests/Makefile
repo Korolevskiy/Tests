@@ -255,8 +255,7 @@ DIST          = /opt/cs-qt/Qt/5.10.0/gcc_64/mkspecs/features/spec_pre.prf \
 		/opt/cs-qt/Qt/5.10.0/gcc_64/mkspecs/features/exceptions.prf \
 		/opt/cs-qt/Qt/5.10.0/gcc_64/mkspecs/features/yacc.prf \
 		/opt/cs-qt/Qt/5.10.0/gcc_64/mkspecs/features/lex.prf \
-		../../gtest-master/tests/tests.pro tst_test1.h \
-		../app/myfunc.h \
+		../../gtest-master/tests/tests.pro ../app/myfunc.h \
 		fibonachi_test.h \
 		../app/common.h \
 		../app/text/text.h \
@@ -767,7 +766,7 @@ gmock-all.o: ../../gtest-master/external/googletest/googlemock/src/gmock-all.cc 
 		../../gtest-master/external/googletest/googlemock/src/gmock.cc
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o gmock-all.o ../../gtest-master/external/googletest/googlemock/src/gmock-all.cc
 
-main.o: ../../gtest-master/tests/main.cpp ../../gtest-master/tests/tst_test1.h \
+main.o: ../../gtest-master/tests/main.cpp ../../gtest-master/tests/fibonachi_test.h \
 		../../gtest-master/external/googletest/googletest/include/gtest/gtest.h \
 		../../gtest-master/external/googletest/googletest/include/gtest/internal/gtest-internal.h \
 		../../gtest-master/external/googletest/googletest/include/gtest/internal/gtest-port.h \
@@ -790,14 +789,7 @@ main.o: ../../gtest-master/tests/main.cpp ../../gtest-master/tests/tst_test1.h \
 		../../gtest-master/external/googletest/googletest/include/gtest/gtest-test-part.h \
 		../../gtest-master/external/googletest/googletest/include/gtest/gtest-typed-test.h \
 		../../gtest-master/external/googletest/googletest/include/gtest/gtest_pred_impl.h \
-		../../gtest-master/external/googletest/googlemock/include/gmock/gmock-matchers.h \
-		../../gtest-master/external/googletest/googlemock/include/gmock/internal/gmock-internal-utils.h \
-		../../gtest-master/external/googletest/googlemock/include/gmock/internal/gmock-generated-internal-utils.h \
-		../../gtest-master/external/googletest/googlemock/include/gmock/internal/gmock-port.h \
-		../../gtest-master/external/googletest/googlemock/include/gmock/internal/custom/gmock-port.h \
-		../../gtest-master/external/googletest/googlemock/include/gmock/internal/custom/gmock-matchers.h \
 		../../gtest-master/app/myfunc.h \
-		../../gtest-master/tests/fibonachi_test.h \
 		../../gtest-master/app/common.h \
 		../../gtest-master/app/text/text.h \
 		../../gtest-master/app/text/_text.h

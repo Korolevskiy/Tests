@@ -213,5 +213,8 @@ TEST(group2, test4){
 
     compare((char *)"outputnoupfirst.txt",(char *) "testOutput3.txt");
 }
+TEST(group3, test1){
+    SUCCEED();
+}
 
 #endif // FIBONACHI_H
