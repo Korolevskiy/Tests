@@ -1,0 +1,8 @@
+#ifndef SHOWREV_H
+#define SHOWREV_H
+
+int showrev(int b);
+
+int fibonachi(int num);
+
+#endif // SHOWREV_H
