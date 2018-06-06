@@ -9,7 +9,7 @@ before_install:
 script:
   - qmake ./gtest-master/qmake-gtest.pro
   - make 
-- ./tests/tests
+  - ./tests/tests
 
 after_success:
   - coveralls --root . -E ".*googletest.*" -E ".*moc_.*"
