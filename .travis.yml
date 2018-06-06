@@ -6,10 +6,10 @@ before_install:
   - sudo apt-get install qtdeclarative5-dev qt5-default
 
 
-
 script:
-  - qmake -qt=qt5
-  - ./tests/tests
+  - qmake ./gtest-master/qmake-gtest.pro
+  - make 
+- ./tests/tests
 
 after_success:
   - coveralls --root . -E ".*googletest.*" -E ".*moc_.*"
