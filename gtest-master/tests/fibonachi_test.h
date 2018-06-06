@@ -223,11 +223,14 @@ TEST(group3, test1){
     SUCCEED();
 }
 
-/*TEST(group3, test2){
-    text txt = create_text();
-    showrev(txt);
+TEST(group3, test2){
+    const char* tch;
+    char th = 'c';
+    tch = &th;
+    
+    show_upfirst(0, tch);
     SUCCEED();
-}*/
+}
 
 
 TEST(group3, test3){
