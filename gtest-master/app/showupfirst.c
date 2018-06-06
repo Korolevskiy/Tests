@@ -4,7 +4,6 @@
 #include "common.h"
 #include "text/text.h"
 
-static void show_upfirst(int, char *);
 
 void showupfirst(text txt)
 {
