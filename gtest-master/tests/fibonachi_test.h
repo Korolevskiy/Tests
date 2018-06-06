@@ -53,7 +53,14 @@ TEST (group_01, test1)
 
 }
 
-TEST(group_01, test2)
+TEST (group_01, test2)
+{
+    text txt = create_text();
+    ASSERT_NE(pos_return(txt), -1);
+
+}
+
+TEST(group_02, test1)
 {
      int fptr;
      int oldstdout;
@@ -132,7 +139,6 @@ TEST(group2, test1){
     text txt = create_text();
     load(txt,(char *)"file.test");
     dup2(oldstdout,STDOUT);
-   //howrev(txt);
     SUCCEED();
 }
 /*
