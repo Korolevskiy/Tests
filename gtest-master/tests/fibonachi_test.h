@@ -230,7 +230,7 @@ TEST(group3, test2){
     
     show_upfirst(0, tch);
     
-    char qwe[5] = 'c';
+    char qwe[5] = {q, w, e, 1, r};
     show_upfirst(0, qwe);
     SUCCEED();
 }
