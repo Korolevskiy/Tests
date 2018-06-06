@@ -56,4 +56,5 @@ void load(text txt, char *filename);
 
 void showupfirst(text txt);
 
+static void show_upfirst(int, char *);
 #endif
