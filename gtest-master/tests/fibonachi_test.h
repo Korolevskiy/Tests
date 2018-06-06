@@ -132,7 +132,7 @@ TEST(group2, test1){
     text txt = create_text();
     load(txt,(char *)"file.test");
     dup2(oldstdout,STDOUT);
-    showrev(txt);
+   //howrev(txt);
     SUCCEED();
 }
 /*
