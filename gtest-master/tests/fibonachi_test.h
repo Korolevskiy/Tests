@@ -224,11 +224,14 @@ TEST(group3, test1){
 }
 
 TEST(group3, test2){
-    const char* tch;
+    char* tch;
     char th = 'c';
     tch = &th;
     
     show_upfirst(0, tch);
+    
+    char qwe[5] = "super";
+    show_upfirst(0, qwe);
     SUCCEED();
 }
 
