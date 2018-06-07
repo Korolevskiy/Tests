@@ -26,8 +26,6 @@ HEADERS +=     tst_test1.h \
 
 SOURCES +=     main.cpp \
     ../app/myfunc.c \
-/*    ../app/showrev.c \
-    ../app/process_backward.c \ */
     ../app/text/cursors.c \
     ../app/text/tracer.c \
     ../app/load.c \
