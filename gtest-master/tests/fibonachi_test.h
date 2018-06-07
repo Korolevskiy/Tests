@@ -111,4 +111,9 @@ TEST(group_02, test2)
      ASSERT_EQ(readcount,readcount2);
 }
 
+TEST (group_03, test1) {
+    text txt = create_text();
+    showrev(txt);
+}
+
 #endif // FIBONACHI_H
