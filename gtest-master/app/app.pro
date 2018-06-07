@@ -5,8 +5,6 @@ CONFIG -= qt
 
 SOURCES += main.c \
     myfunc.c \
-    showrev.c \
-    process_backward.c \
     text/cursors.c \
     text/tracer.c \
     text/create_text.c
