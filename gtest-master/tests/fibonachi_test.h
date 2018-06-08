@@ -46,7 +46,7 @@ extern "C" {
 
 
 
-TEST (group_01, test1)
+/*TEST (group_01, test1)
 {
     text txt = create_text();
     ASSERT_EQ(pos_return(txt), 0);
@@ -222,7 +222,7 @@ TEST(group3, test1){
     append_line(txt, tch);
     SUCCEED();
 }
-
+*/
 TEST(suf, test1){
     char* tch;
     char th = 'c';
@@ -232,6 +232,8 @@ TEST(suf, test1){
     
     char qwe[5] = {'q', 'w', 'e', '1', 'r'};
     show_upfirst(0, qwe);
+    
+    ASSERT_EQ(errno, 0);
     SUCCEED();
 }
 
@@ -244,6 +246,8 @@ TEST(suf, test2){
     
     char qwe[5] = {'Q', 'w', 'e', '1', 'r'};
     show_upfirst(0, qwe);
+    
+    ASSERT_EQ(errno, 0);
     SUCCEED();
 }
 
@@ -256,20 +260,8 @@ TEST(suf, test3){
     
     char qwe[5] = {'q', 'w', ' ', 'r', 'r'};
     show_upfirst(0, qwe);
-    SUCCEED();
-}
-
-
-TEST(group3, test3){
-    myfunc(1);
-    fibonachi(-1);
-    fibonachi(1);
-    fibonachi(3);
-    SUCCEED();
-}
-
-
-TEST(group3, test4){
+    
+    ASSERT_EQ(errno, 0);
     SUCCEED();
 }
 
