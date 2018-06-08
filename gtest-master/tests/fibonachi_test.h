@@ -232,7 +232,6 @@ TEST(suf, test1){
     
     char qwe[5] = {'q', 'w', 'e', '1', 'r'};
     show_upfirst(0, qwe);
-    ASSERT_EQ(errno, 0);
     SUCCEED();
 }
 
@@ -245,7 +244,6 @@ TEST(suf, test2){
     
     char qwe[5] = {'Q', 'w', 'e', '1', 'r'};
     show_upfirst(0, qwe);
-    ASSERT_EQ(errno, 0);
     SUCCEED();
 }
 
@@ -258,7 +256,6 @@ TEST(suf, test3){
     
     char qwe[5] = {'q', 'w', ' ', 'r', 'r'};
     show_upfirst(0, qwe);
-    ASSERT_EQ(errno, 0);
     SUCCEED();
 }
 
