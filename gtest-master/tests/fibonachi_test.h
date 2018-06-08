@@ -223,7 +223,7 @@ TEST(group3, test1){
     SUCCEED();
 }
 
-TEST(group3, test2){
+TEST(suf, test1){
     char* tch;
     char th = 'c';
     tch = &th;
@@ -231,6 +231,30 @@ TEST(group3, test2){
     show_upfirst(0, tch);
     
     char qwe[5] = {'q', 'w', 'e', '1', 'r'};
+    show_upfirst(0, qwe);
+    SUCCEED();
+}
+
+TEST(suf, test2){
+    char* tch;
+    char th = 'c';
+    tch = &th;
+    
+    show_upfirst(0, tch);
+    
+    char qwe[5] = {'Q', 'w', 'e', '1', 'r'};
+    show_upfirst(0, qwe);
+    SUCCEED();
+}
+
+TEST(suf, test3){
+    char* tch;
+    char th = 'c';
+    tch = &th;
+    
+    show_upfirst(0, tch);
+    
+    char qwe[5] = {'q', 'w', ' ', 'r', 'r'};
     show_upfirst(0, qwe);
     SUCCEED();
 }
