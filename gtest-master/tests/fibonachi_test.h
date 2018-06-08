@@ -224,6 +224,12 @@ TEST(group3, test1){
 }
 */
 TEST(suf, test1){
+    text txt = create_text();
+    showupfirst(txt);
+    ASSERT_EQ(errno, 0);
+    SUCCEED();
+}
+TEST(suf, test6){
     char* tch;
     char th = 'c';
     tch = &th;
