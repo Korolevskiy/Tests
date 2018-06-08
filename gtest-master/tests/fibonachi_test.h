@@ -104,12 +104,12 @@ TEST(group_02, test2)
             SUCCEED();
             return;
      }
-     char *buf2 = (char*)malloc(sizeof(char)*512);
+/*     char *buf2 = (char*)malloc(sizeof(char)*512);
      int readcount2 = fread(buf2,1,512,d);
      fclose(t);
      fclose(d);
      ASSERT_EQ(readcount,readcount2);
-}
+*/}
 
 
 #endif // FIBONACHI_H
